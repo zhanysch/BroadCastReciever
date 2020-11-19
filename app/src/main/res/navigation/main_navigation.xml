@@ -8,5 +8,23 @@
         android:id="@+id/onBoardFragment"
         tools:layout="@layout/fragment_onboard"
         android:name="com.example.garage.ui.onboard.OnBoardFragment"
-        android:label="OnBoardActivity" />
+        android:label="OnBoardActivity" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_inputNameFragment"
+            app:destination="@id/inputNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputNameFragment"
+        tools:layout="@layout/fragment_onboardsecond"
+        android:name="com.example.garage.ui.inputname.InputNameFragment"
+        android:label="InputNameFragment" >
+        <action
+            android:id="@+id/action_inputNameFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageFragment"
+        tools:layout="@layout/age_fragment"
+        android:name="com.example.garage.ui.onboard.AgeFragment"
+        android:label="AgeFragment" />
 </navigation>

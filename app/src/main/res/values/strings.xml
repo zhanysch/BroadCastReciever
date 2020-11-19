@@ -2,5 +2,6 @@
     <string name="app_name">Garage</string>
     <string name="firstword">Перед тобой\n «Музей на РЖЯ - детям»,\n объясняющий незнакомые слова\n из мира искусства на русском\n жестовом языке!</string>
     <string name="word_pagetwo">Привет!\n Давай знакомиться! \n как тебя зовут?</string>
+    <string name="old_you">Сколько тебе лет?</string>
 
 </resources>
