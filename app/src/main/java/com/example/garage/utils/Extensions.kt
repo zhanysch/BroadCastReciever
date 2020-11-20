@@ -1,7 +1,8 @@
 package com.example.garage.utils
 
 import android.widget.SeekBar
-import kotlinx.android.synthetic.main.age_fragment.*
+import com.example.garage.R
+import kotlinx.android.synthetic.main.age_fragment.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -32,11 +33,11 @@ fun startCoroutinesTimer(
 }
 
 
+
 fun SeekBar.setSeekbarChangeListener(action: (Int) -> Unit){ //progress от 0 -100
     setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
         override fun onProgressChanged(p0: SeekBar?, progress: Int, p2: Boolean) {
             action(progress)
-
         }
 
         override fun onStartTrackingTouch(p0: SeekBar?) {}
@@ -44,5 +45,4 @@ fun SeekBar.setSeekbarChangeListener(action: (Int) -> Unit){ //progress от 0 -
         override fun onStopTrackingTouch(p0: SeekBar?) {}
 
     })
-
 }

@@ -19,22 +19,31 @@
     app:layout_constraintEnd_toEndOf="parent"
     android:layout_marginBottom="50dp" />
 
+    <ImageView
+        android:id="@+id/redMan"
+        android:src="@drawable/monster"
+        android:layout_width="194dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toBottomOf="@id/board"
+        app:layout_constraintStart_toStartOf="@id/board"
+        app:layout_constraintEnd_toStartOf="@id/board"/>
 
 
     <com.example.garage.view.WriterTextView
         android:id="@+id/textage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
         android:fontFamily="@font/font_friends"
+        android:lineSpacingExtra="10sp"
         android:text="@string/old_you"
         android:textColor="@color/dark"
-        android:lineSpacingExtra="10sp"
         android:textSize="18sp"
-        app:layout_constraintVertical_bias="0.13"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
 
     <ImageView
         android:id="@+id/board"
@@ -89,7 +98,7 @@
         android:layout_height="0dp"/>
 
 
-    <com.example.garage.view.CustomImageView
+    <com.example.garage.view.AnimatedPressImageView
         android:id="@+id/btnContin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -49,7 +49,7 @@
         app:layout_constraintTop_toTopOf="@id/image"
         app:layout_constraintVertical_bias="0.24"/>
 
-    <com.example.garage.view.CustomImageView
+    <com.example.garage.view.AnimatedPressImageView
         android:id="@+id/btnContin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

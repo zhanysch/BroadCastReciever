@@ -8,7 +8,7 @@ import com.example.garage.utils.AnimationUtils
 
 
 //class для кастмоной верстки кнопки (button , чтоб увеличивалась кнопка и уменьшалась )
-class CustomImageView(context: Context , attributeSet: AttributeSet):
+class AnimatedPressImageView(context: Context, attributeSet: AttributeSet):
         AppCompatImageView(context, attributeSet) {
 
     init {
