@@ -33,6 +33,11 @@ class AgeFragment : BaseFragment() {
             lastScale = it.toFloat()
             number.text = it.toString()
             progress = it
+            if (it == 15){
+                number.text = "16+"
+            } else if ( it == 0){
+                number.text = "1"
+            }
             if (textage != null){
                 if(progress >= 3 && progress < 4)
                     textage.text = context?.getString(R.string.wfsf)

@@ -79,7 +79,7 @@
         android:layout_width="290dp"
         android:layout_height="40dp"
         android:rotation="270"
-        android:max="16"
+        android:max="15"
         android:min="0"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

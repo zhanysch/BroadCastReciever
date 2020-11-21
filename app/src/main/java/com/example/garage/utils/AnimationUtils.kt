@@ -50,7 +50,7 @@ object AnimationUtils {
 
     fun animateScale(view: View, scaleFrom: Float, scaleTo: Float) {
         val maxScale = 100f
-        val minScale = 60f
+        val minScale = 70f
 
         val scaleFromFactor = (((maxScale - minScale) / 100f) * scaleFrom + minScale) /100
         val scaleToFactor = (((maxScale - minScale) / 100f) * scaleTo + minScale) / 100
